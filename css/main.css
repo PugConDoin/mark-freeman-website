@@ -113,7 +113,7 @@ button {
       cursor: pointer; }
 
 .wrapper {
-  background-image: linear-gradient(to bottom right, rgba(75, 50, 30, 0.8), rgba(236, 236, 233, 0.8)), url(/img/header-bg.jpg);
+  background-image: linear-gradient(to bottom right, rgba(236, 236, 233, 0.8), rgba(236, 236, 233, 0.8)), url(/img/header-bg.jpg);
   background-size: cover;
   background-position: bottom; }
 
