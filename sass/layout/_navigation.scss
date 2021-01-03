@@ -1,0 +1,64 @@
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  gap: 1em;
+  padding: 0;
+  list-style: none;
+}
+
+.nav a {
+  display: block;
+  color: $color-brand;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 1em;
+}
+
+a:hover {
+  background-color: $color-brand;
+  color: $color-light;
+}
+
+[aria-controls='nav-list'] {
+  display: none;
+}
+
+@include respond(tab-port) {
+  .nav {
+    order: -1;
+    perspective: 800px;
+  }
+  [aria-controls='nav-list'] {
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  .nav ul {
+    max-height: 0;
+    overflow: hidden;
+    transform: rotateX(90deg);
+    transition: all 0.5s;
+  }
+
+  [aria-expanded='true'] ~ ul {
+    display: grid;
+    max-height: 50rem;
+    transform: rotateX(0);
+    background-color: rgba($color-light, 0.4);
+    border-radius: 0.2em;
+  }
+
+  [aria-expanded='false'] .close {
+    display: none;
+  }
+
+  [aria-expanded='true'] .close {
+    display: inline-block;
+  }
+
+  [aria-expanded='true'] .open {
+    display: none;
+  }
+}

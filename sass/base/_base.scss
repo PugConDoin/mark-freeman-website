@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+//Set site wide fonts equiv to 10px to make calculating rem and em units easy
+html {
+  font-size: 62.5%; // Set base font. 1rem = 10px 10px/16px = 62.5%
+
+  // call in mixins for each device screen size
+  @include respond(tab-land) {
+    // if width < 1200px
+    font-size: 56.25%; //1rem = 9px, 9/16 =5 0%
+  }
+
+  @include respond(tab-port) {
+    // if width is < 600px (includes mobile)
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(large-desktop) {
+    font-size: 75%; // 1rem = 12px, 12/16 = 75%%
+  }
+}
+
+body {
+  box-sizing: border-box;
+}

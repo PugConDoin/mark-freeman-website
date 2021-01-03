@@ -1,0 +1,55 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  padding-top: 30vh;
+  margin-bottom: 3em;
+
+  @include respond(mobile) {
+    align-items: center;
+    text-align: center;
+    padding-top: 1em;
+    margin-bottom: 0;
+  }
+
+  &__logo {
+    height: 3.5em;
+    transform: translateY(2rem);
+
+    @include respond(mobile) {
+      transform: translateY(1em);
+    }
+  }
+
+  &__sub-text {
+    color: $color-dark;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-top: 0.1em;
+  }
+}
+
+.animate-left {
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  backface-visibility: hidden;
+}
+
+.animate-right {
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  backface-visibility: hidden;
+}
+
+.animate-bottom {
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  backface-visibility: hidden;
+}

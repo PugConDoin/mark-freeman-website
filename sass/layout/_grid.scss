@@ -1,0 +1,18 @@
+.wrapper {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba($color-brand, 0.8),
+      rgba($color-light, 0.8)
+    ),
+    url(/img/header-bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2em;
+  padding: 3em;
+}
