@@ -15,6 +15,14 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&family=Raleway:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e9defc1be2.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="shortcut icon" type="image/png" href="img/mf_hex_logo.png" />
     <title>Mark Freeman | Web Developer Portfolio</title>
@@ -24,7 +32,11 @@
       <div class="container">
         <header class="hero">
           <div>
-            <img src="/img/hex-logo-dark.png" class="hero__logo" alt="logo" />
+            <img
+              src="/img/hex-logo-dark.png"
+              class="hero__logo animate-top"
+              alt="logo"
+            />
             <h1 class="animate-left">mark</h1>
             <h1 class="animate-left">freeman</h1>
             <h2 class="animate-right">web developer</h2>
@@ -41,19 +53,23 @@
           </button>
           <ul id="nav-list">
             <li>
-              <a href="">01 | work</a>
+              <a href=""><i class="material-icons">face</i> ABOUT</a>
             </li>
             <li>
-              <a href="">02 | about</a>
+              <a href=""><i class="material-icons">laptop_mac</i> WORK</a>
             </li>
             <li>
-              <a href="">03 | blog</a>
+              <a href=""><i class="material-icons">tablet_mac</i> APPS</a>
             </li>
             <li>
-              <a href="">04 | resources</a>
+              <a href=""
+                ><i class="material-icons">bookmark_border</i> RESOURCES</a
+              >
             </li>
             <li>
-              <a href="">05| kids code</a>
+              <a href=""
+                ><i class="material-icons">flutter_dash</i> KIDS CODE</a
+              >
             </li>
           </ul>
         </nav>
@@ -76,18 +92,18 @@
                 included creative and management of social media advertising
                 campaigns.
               </p>
-              <h3>Superdad and Recreation</h3>
+              <h3>Superdad</h3>
               <p class="profile-gap">
                 I'm having lots of fun learning computer science and Python with
-                my two children, Illy,11 and Kit 9. I read classics, spy
+                my two children; Illy, 11 and Kit, 9. I read classics, spy
                 thrillers and historical finction.
               </p>
             </div>
             <div>
               <h3>Tools & Skills</h3>
               <p class="profile-gap">
-                I build modern responsive web applications and am experienced in
-                social media advertising.
+                I build modern responsive web applications, Shopify stores and
+                digital marketing campaigns.
               </p>
               <h3>Built With</h3>
               <ul>
@@ -104,7 +120,7 @@
               </ul>
             </div>
             <div>
-              <h2 class="profile__cta-text">Have a Project Idea?</h2>
+              <h2 class="profile__cta-text">free projects</h2>
               <p class="profile-gap">
                 I enjoy helping startups and small businesses, offering pro-bono
                 services for the right project. Get in touch to see if that's
@@ -116,29 +132,39 @@
               >
             </div>
           </section>
-          <section class="footer">
-            <div>
-              <h3>Social</h3>
-              <ul>
-                <li>Twitter</li>
-                <li>LinkedIn</li>
-                <li>GitHub</li>
-              </ul>
-            </div>
-            <div>
-              <h3>Email</h3>
-              <p>mark@markfreeman.tech</p>
-            </div>
-            <div>
-              <h3>Location</h3>
-              <p>Dorset, UK</p>
-            </div>
-            <div>
-              <h3>&#169; Mark Freeman 2021</h3>
-            </div>
-          </section>
         </div>
       </div>
+      <section class="footer">
+        <div>
+          <ul>
+            <a href="https://twitter.com/nitecoda1"
+              ><li><i class="fab fa-twitter"></i> Twitter</li></a
+            >
+            <a href="https://www.linkedin.com/in/mxfreeman/">
+              <li><i class="fab fa-linkedin"></i> LinkedIn</li></a
+            >
+            <a href="https://github.com/PugConDoin"
+              ><li><i class="fab fa-github"></i> GitHub</li></a
+            >
+          </ul>
+        </div>
+        <div>
+          <a
+            href="mailto:mark@markfreeman.tech?subject=Webproject or Application&body=Hey Mark, I have something I'd like you to consider:"
+            ><li><span class="material-icons">email</span> Send Email</li></a
+          >
+        </div>
+        <div>
+          <a
+            href="https://www.google.com/maps/place/Dorset/@50.7955879,-2.8820359,9z/data=!3m1!4b1!4m5!3m4!1s0x486d80aaedabf177:0x33a1f481bada6d5f!8m2!3d50.7487635!4d-2.3444786"
+          >
+            <li><span class="material-icons"> location_on </span>Dorset, UK</li>
+          </a>
+        </div>
+        <div>
+          <p><i class="far fa-copyright"></i> Mark Freeman 2021</p>
+        </div>
+      </section>
     </div>
     <script src="/js/app.js"></script>
   </body>

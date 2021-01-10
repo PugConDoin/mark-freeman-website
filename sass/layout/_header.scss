@@ -23,10 +23,14 @@
   }
 
   &__sub-text {
-    color: $color-dark;
+    color: $color-heading;
     font-size: 1.6rem;
     font-weight: 400;
-    padding-top: 0.1em;
+    padding-top: 0.5em;
+
+    @include respond(mobile) {
+      display: none;
+    }
   }
 }
 
@@ -40,7 +44,7 @@
 
 .animate-right {
   animation-name: moveInLeft;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   backface-visibility: hidden;
@@ -48,7 +52,15 @@
 
 .animate-bottom {
   animation-name: moveInBottom;
-  animation-duration: 1s;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  backface-visibility: hidden;
+}
+
+.animate-top {
+  animation-name: moveInTop;
+  animation-duration: 3s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   backface-visibility: hidden;

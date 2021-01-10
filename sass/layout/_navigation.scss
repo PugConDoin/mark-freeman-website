@@ -1,24 +1,24 @@
 .nav ul {
+  font-size: 1.2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
   gap: 1em;
-  padding: 0;
   list-style: none;
 }
 
 .nav a {
   display: block;
-  color: $color-brand;
-  font-weight: 400;
-  text-transform: uppercase;
+  color: $color-primary;
+  text-transform: capitalize;
   text-decoration: none;
   text-align: center;
-  padding: 1em;
+  padding: 2em 0;
+  border-radius: 0.2em;
 }
 
 a:hover {
   background-color: $color-brand;
-  color: $color-light;
+  color: $color-bg;
 }
 
 [aria-controls='nav-list'] {
@@ -43,10 +43,9 @@ a:hover {
   }
 
   [aria-expanded='true'] ~ ul {
-    display: grid;
+    display: block;
     max-height: 50rem;
     transform: rotateX(0);
-    background-color: rgba($color-light, 0.4);
     border-radius: 0.2em;
   }
 

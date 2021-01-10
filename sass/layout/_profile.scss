@@ -7,10 +7,6 @@
   @include respond(mobile) {
     text-align: center;
   }
-
-  &__cta-text {
-    font-size: 2.6rem;
-  }
 }
 
 .profile-gap {

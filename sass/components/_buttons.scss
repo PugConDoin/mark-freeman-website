@@ -1,23 +1,30 @@
 button {
-  background-color: rgba($color-light, 0.5);
-  border: 0;
-  border-radius: 100em;
+  background-color: transparent;
+  color: $color-heading;
+  border: 1px solid $color-heading;
+  border-radius: 0.2em;
   padding: 1em;
 
   &.cta {
-    background-color: $color-brand;
-    color: $color-light;
-    border-radius: 0.2em;
+    background-color: $color-bg;
+    color: $color-brand;
+    border: 1px solid $color-brand;
     font-size: 1.6rem;
-    font-weight: 300;
-    padding: 2em 5em;
+    padding: 1em 3em;
     margin-bottom: 3em;
+    transition: all 0.1s;
 
     &:hover {
-      background-color: $color-light;
-      color: $color-brand;
-      font-weight: 500;
       cursor: pointer;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba($color-heading, 0.2);
+    }
+
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba($color-heading, 0.2);
+      background-color: $color-brand;
+      color: $color-bg;
     }
   }
 }

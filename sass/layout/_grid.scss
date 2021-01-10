@@ -1,12 +1,15 @@
 .wrapper {
   background-image: linear-gradient(
-      to bottom right,
-      rgba($color-light, 0.8),
-      rgba($color-light, 0.8)
+      to bottom,
+      rgba($color-brand, 0.2),
+      rgba($color-bg, 0.7),
+      rgba($color-bg, 1),
+      rgba($color-bg, 1),
+      rgba($color-brand, 1)
     ),
     url(/img/header-bg.jpg);
-  background-size: cover;
-  background-position: bottom;
+  background-size: 100%;
+  background-position: top;
 }
 
 .container {
