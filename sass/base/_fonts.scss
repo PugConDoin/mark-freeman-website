@@ -87,3 +87,9 @@ a {
   text-emphasis: none;
   color: $color-primary;
 }
+
+.hero a:hover {
+  text-decoration: none;
+  text-emphasis: none;
+  background-color: none;
+}

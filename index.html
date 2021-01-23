@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- META -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Font Awesome CDN -->
+    <!-- FONT AWESOME CDN -->
     <script
       src="https://kit.fontawesome.com/e9defc1be2.js"
       crossorigin="anonymous"
     ></script>
-    <!-- google fonts -->
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&family=Raleway:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- MATERAIL ICON SET -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!-- FONT AWESOME ICON SET -->
     <script
       src="https://kit.fontawesome.com/e9defc1be2.js"
       crossorigin="anonymous"
     ></script>
+    <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="shortcut icon" type="image/png" href="img/mf_hex_logo.png" />
     <title>Mark Freeman | Web Developer Portfolio</title>
   </head>
   <body>
+    <!-- WHOLE SITE WRAPPER WITH BG IMAGE -->
     <div class="wrapper">
+      <!-- CONTAINER WRAPS PAGE CONTENT TO 75rem   -->
       <div class="container">
+        <!-- HERO --contains-header-text-- -->
         <header class="hero">
           <div>
             <img
@@ -44,7 +51,19 @@
               executive by day | coder by night
             </p>
           </div>
+          <!-- SCROLL -->
+          <div class="scroll-down">
+            <div id="scroller" class="mouse">
+              <span></span>
+            </div>
+            <div class="arrow">
+              <span></span>
+            </div>
+          </div>
+          <!-- end SCROLL -->
         </header>
+        <!-- end HERO -->
+        <!-- start NAVIGATION -->
         <nav class="nav">
           <button aria-expanded="false" aria-controls="nav-list">
             <span class="open"><i class="fas fa-chevron-circle-down"></i></span>
@@ -73,7 +92,9 @@
             </li>
           </ul>
         </nav>
+        <!-- END navigation -->
         <div>
+          <!-- start SECTION MAIN PROFILE -->
           <section class="profile">
             <div>
               <h3>Executive by Day</h3>
@@ -134,6 +155,8 @@
           </section>
         </div>
       </div>
+      <!-- end SECTION MAIN PROFILE -->
+      <!-- start SECTION FOOTER -->
       <section class="footer">
         <div>
           <ul>
@@ -162,10 +185,12 @@
           </a>
         </div>
         <div>
-          <p><i class="far fa-copyright"></i> Mark Freeman 2021</p>
+          <p class="copy">Copyrite niteCode</p>
         </div>
       </section>
+      <!-- end SECTION FOOTER -->
     </div>
     <script src="/js/app.js"></script>
+    <!-- end WRAPPER -->
   </body>
 </html>
